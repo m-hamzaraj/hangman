@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HangMan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <p>Guess The Correct Word</p>
+    </div>
+    <div class="hero">
+      <div class="wrapper">
+        <input type="text" class="screen" id="screen" readonly />
+        <p id="hint"></p>
+        <button onclick="Display('A')" class="btn">A</button>
+        <button onclick="Display('B')" class="btn">B</button>
+        <button onclick="Display('C')" class="btn">C</button>
+        <button onclick="Display('D')" class="btn">D</button>
+        <button onclick="Display('E')" class="btn">E</button>
+        <button onclick="Display('F')" class="btn">F</button>
+        <button onclick="Display('G')" class="btn">G</button>
+        <button onclick="Display('H')" class="btn">H</button>
+        <button onclick="Display('I')" class="btn">I</button>
+        <button onclick="Display('J')" class="btn">J</button>
+        <button onclick="Display('K')" class="btn">K</button>
+        <button onclick="Display('L')" class="btn">L</button>
+        <button onclick="Display('M')" class="btn">M</button>
+        <button onclick="Display('N')" class="btn">N</button>
+        <button onclick="Display('O')" class="btn">O</button>
+        <button onclick="Display('P')" class="btn">P</button>
+        <button onclick="Display('Q')" class="btn">Q</button>
+        <button onclick="Display('R')" class="btn">R</button>
+        <button onclick="Display('S')" class="btn">S</button>
+        <button onclick="Display('T')" class="btn">T</button>
+        <button onclick="Display('U')" class="btn">U</button>
+        <button onclick="Display('V')" class="btn">V</button>
+        <button onclick="Display('W')" class="btn">W</button>
+        <button onclick="Display('X')" class="btn">X</button>
+        <button onclick="Display('Y')" class="btn">Y</button>
+        <button onclick="Display('Z')" class="btn">Z</button>
+        <button onclick="clr()" class="btn">Clear</button>
+        <button onclick="hint()" class="btn hinte">Hint</button>
+        <button onclick="ok()" class="btn">OK</button>
+        <select name="level" id="level" onchange="select_level(this)">
+          <option value="" selected disabled hidden>Level</option>
+          <option value="basic">Basic</option>
+          <option value="inter">INTERMEDIATE</option>
+          <option value="adv">ADVANCE</option>
+        </select>
+      </div>
+      <div class="container">
+        <img
+          src="images/hangman(1).png"
+          alt="first"
+          class="pic"
+          id="first"
+          width="30%"
+          height="30%"
+        />
+        <img
+          src="images/hangman(2).png"
+          alt="second"
+          class="pic"
+          id="second"
+          width="50%"
+          height="50%"
+        />
+        <h1 class="he">Hangman Game</h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
